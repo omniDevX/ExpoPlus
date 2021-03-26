@@ -1,2 +1,2 @@
 # Case83_RoomStepByStep
- from core function to full functions
+ 1. main branch: implement: Entity, Dao, Database. no others. core functions insert, update.
