@@ -12,7 +12,9 @@ import com.hypech.case83_roomstepbystep.async.InsertAsyncTask;
 import com.hypech.case83_roomstepbystep.async.UpdateAsyncTask;
 
 import java.util.List;
-
+/* ViewModel 的职责是管理界面的数据，数据的获取不应该属于ViewModel，
+ * 如插入、修改数据等。我们应该创建仓库类，来实现对数据的直接操作。
+ */
 public class WordViewModel extends AndroidViewModel {
     private WordDao wordDao;
     private LiveData<List<Word>> allWordsLive;
