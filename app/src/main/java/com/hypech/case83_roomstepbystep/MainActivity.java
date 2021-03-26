@@ -1,6 +1,8 @@
 package com.hypech.case83_roomstepbystep;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
 import androidx.room.Room;
 
 import android.os.Bundle;
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     WordDatabase wordDatabase;
     WordDao wordDao;
+    LiveData<List<Word>> allWordsLive;
 
     Button buttonInsert, buttonUpdate;
     TextView textView;
@@ -28,10 +31,22 @@ public class MainActivity extends AppCompatActivity {
                 .allowMainThreadQueries()       //in first step, we allow Main Thread update
                 .build();
         wordDao = wordDatabase.getWordDao();
+        allWordsLive = wordDao.getAllWordsLive();
 
         buttonInsert = findViewById(R.id.buttonInsert);
         buttonUpdate = findViewById(R.id.buttonUpdate);
         textView = findViewById(R.id.textViewHW);
+        allWordsLive.observe(this, new Observer<List<Word>>() {
+            @Override
+            public void onChanged(List<Word> words) {
+                StringBuilder text = new StringBuilder();
+                for (int i = 0; i < words.size(); i++){
+                    Word word = words.get(i);
+                    text.append(word.getId()).append("! ").append(word.getWord()).append("= ").append(word.getChinesemeaning());
+                }
+                textView.setText(text.toString());
+            }
+        });
 
         buttonInsert.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -39,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 Word word1 = new Word("Hello","你好");
                 Word word2 = new Word("World","世界");
                 wordDao.insertWords(word1, word2);
-                updateView();
+//                updateView();
             }
         });
 
@@ -49,11 +64,11 @@ public class MainActivity extends AppCompatActivity {
                 Word word = new Word("Hi","你好啊");
                 word.setId(2);
                 wordDao.updateWords(word);
-                updateView();
+//                updateView();
             }
         });
     }
-
+/*
     void updateView(){
         List<Word> list = wordDao.getAllWords();
         Log.e("text:  ", String.valueOf(list.size()));
@@ -65,5 +80,5 @@ public class MainActivity extends AppCompatActivity {
         }
         Log.e("text2:  ", text);
         textView.setText(text);
-    }
+    }*/
 }
