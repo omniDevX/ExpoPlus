@@ -1,0 +1,63 @@
+{
+    "expo": {
+        "name": "Asian Beauty",
+        "slug": "asianbeauty-ycc",
+        "version": "5.54.1014",
+        "orientation": "portrait",
+        "icon": "./assets/images/icon.png",
+        "scheme": "myapp",
+        "userInterfaceStyle": "automatic",
+        "newArchEnabled": true,
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/images/adaptive-icon.png",
+                "backgroundColor": "#4B1A1A"
+            },
+            "package": "com.aixpertlab.asianbeautyycc"
+        },
+        "web": {
+            "bundler": "metro",
+            "output": "single",
+            "favicon": "./assets/images/favicon.png"
+        },
+        "plugins": [
+            [
+                "expo-splash-screen",
+                {
+                    "image": "./assets/images/splash-icon.png",
+                    "imageWidth": 500,
+                    "resizeMode": "contain",
+                    "backgroundColor": "#4B1A1A"
+                }
+            ],
+            "expo-font",
+            [
+                "react-native-google-mobile-ads",
+                {
+                    "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+                    "androidAppId": "ca-app-pub-9117325879733746~7483375632"
+                }
+            ],
+            [
+                "expo-build-properties",
+                {
+                    "ios": {
+                        "useFrameworks": "static"
+                    }
+                }
+            ]
+        ],
+        "experiments": {
+            "typedRoutes": true
+        },
+        "extra": {
+            "router": {
+                "origin": false
+            }
+        },
+        "owner": "omnidevx"
+    }
+}
