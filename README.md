@@ -61,3 +61,41 @@ cd myapp
 npx expo install expo-dev-client
 # Use ExpoPlus as your dev client
 npx expoplus run:android
+
+You can fork and create your own version — e.g. `ExpoPlus-Light` or `ExpoPlus-Media`.
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Prebuilt iOS version  
+- [ ] Versioned builds for each Expo SDK  
+- [ ] Web preview integration  
+- [ ] Module compatibility matrix  
+
+---
+
+## 🤝 Contribute
+
+We welcome contributions!  
+Add new modules, optimize build size, improve compatibility, or update SDK support.
+
+1. Fork this repo  
+2. Create a new branch: `feature/your-feature`  
+3. Submit a pull request  
+4. Join the discussion on [GitHub Issues](../../issues).
+
+---
+
+## 🧭 Release Notes
+
+### **v1.0.0 — Universal Base Build**
+- Based on **Expo SDK 54 / RN 0.81.4**  
+- Preinstalled navigation, animation, ads, and system modules  
+- Ready-to-use dev client with no rebuilds required  
+
+---
+
+## 📜 License
+
+MIT © 2025 ExpoPlus Contributors
