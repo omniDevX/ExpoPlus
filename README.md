@@ -63,8 +63,9 @@ npx expo install expo-dev-client
 npx expoplus run:android
 
 You can fork and create your own version — e.g. `ExpoPlus-Light` or `ExpoPlus-Media`.
-
+```
 ---
+
 
 ## 🗺️ Roadmap
 
