@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { Colors } from "./Colors";
+import { Colors } from "../constants/Colors";
 
 export const abs = StyleSheet.create({
     ViewContainer: { flex: 1, backgroundColor: Colors.mainCatLight, padding: 10, },

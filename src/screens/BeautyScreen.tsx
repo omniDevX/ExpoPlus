@@ -62,8 +62,8 @@ export const BeautyScreen = () => {
             />
             <View style={{ alignItems: 'center', marginBottom: 10 }}>
                 <BannerAd
-                    unitId={"ca-app-pub-9117325879733746/2194727225"}
-                    // unitId={TestIds.BANNER}
+                    // unitId={"ca-app-pub-9117325879733746/2194727225"}
+                    unitId={TestIds.BANNER}
                     size={BannerAdSize.BANNER}
                 />
             </View>

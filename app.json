@@ -1,7 +1,7 @@
 {
     "expo": {
-        "name": "Asian Beauty",
-        "slug": "asianbeauty-ycc",
+        "name": "ExpoPlus",
+        "slug": "expoplus",
         "version": "5.54.1014",
         "orientation": "portrait",
         "icon": "./assets/images/icon.png",
@@ -16,7 +16,7 @@
                 "foregroundImage": "./assets/images/adaptive-icon.png",
                 "backgroundColor": "#4B1A1A"
             },
-            "package": "com.aixpertlab.asianbeautyycc"
+            "package": "com.omnidevx.expoplus"
         },
         "web": {
             "bundler": "metro",

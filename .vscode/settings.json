@@ -16,6 +16,6 @@
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
     "workbench.colorTheme": "Default Dark Modern",
-    "workbench.iconTheme": "vs-seti"	
+    "workbench.iconTheme": "material-icon-theme"	
 }
 

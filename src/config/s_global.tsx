@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { Dimensions } from 'react-native';
-import { Colors } from "./Colors";
+import { Colors } from "../constants/Colors";
 
 const screenWidth = Dimensions.get('window').width;
 const cardWidth = (screenWidth - 16 * 5) / 2;

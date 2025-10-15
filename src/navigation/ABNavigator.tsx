@@ -4,7 +4,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NaviParamList } from '@/src/types/navi';
 import { HomeScreen, BeautyScreen, SlideScreen } from '@/src/screens';
-import { Colors } from '@/src/config/Colors';
+import { Colors } from '@/src/constants/Colors';
 import CustomDrawerContent from "@/src/navigation/DrawerContent";
 
 // 🟣 Drawer: Main App Area (Home)
