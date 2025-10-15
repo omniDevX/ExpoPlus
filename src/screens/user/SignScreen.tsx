@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View,StyleSheet, TextInput, Text, TouchableOpacity, Image, Alert, KeyboardAvoidingView, Platform, TouchableWithoutFeedback, ScrollView, Keyboard } from 'react-native';
 import auth from '@react-native-firebase/auth';
 import { useFirebaseUserStore } from '@/src/stores/FirebaseUserStore';
-import { colors } from '@/src/constants/Colors';
+import { Colors } from '@/src/constants/Colors2';
 
 export default function SmartSignInScreen() {
     const setFirebaseUser = useFirebaseUserStore((s) => s.setFirebaseUser);
@@ -85,7 +85,7 @@ export default function SmartSignInScreen() {
 
                     {/* Sign In button */}
                     <TouchableOpacity
-                        style={[styles.button, { backgroundColor: colors.main }]}
+                        style={[styles.button, { backgroundColor: Colors.main }]}
                         onPress={handleSignIn}
                         disabled={isLoading}
                     >
