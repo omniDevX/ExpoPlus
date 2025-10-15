@@ -9,6 +9,7 @@ import { Colors } from '@/src/constants/Colors';
 import { BannerAd, BannerAdSize, TestIds, MobileAds } from 'react-native-google-mobile-ads';
 import { ABDrawerNavigator, ABStackNavigator } from '@/src/navigation/ABNavigator';
 import SignScreen from '@/src/screens/user/SignScreen';
+import { initializeApp } from '@react-native-firebase/app';
 
 const Root_Stack = createNativeStackNavigator();
 

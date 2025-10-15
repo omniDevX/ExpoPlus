@@ -16,6 +16,11 @@
                 "foregroundImage": "./assets/images/adaptive-icon.png",
                 "backgroundColor": "#4B1A1A"
             },
+            "edgeToEdgeEnabled": true,
+            "googleServicesFile": "./src/config/google-services-expoplus.json",
+            "permissions": [
+                "com.android.vending.BILLING"
+            ],
             "package": "com.omnidevx.expoplus"
         },
         "web": {
